@@ -1,0 +1,105 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.song-name {
+  color: #507daf;
+  font-size: 18px;
+}
+
+.song-singer {
+  color: #888888;
+  font-size: 12px;
+}
+
+.tuijian-lists {
+  padding: 0 20rpx 0 20rpx;
+}
+
+.weui-size {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.header #text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header #text2 {
+
+  border: 1px #ccc solid;
+  width: 20%;
+  height: 25px;
+  border-radius: 25px;
+
+}
+
+.hea {
+ 
+  background-position: -225px -156px;
+  border-bottom: 2px solid #C10D0C;
+}
+
+.ranking .image {
+  width: 40%;
+  height: 150px;
+
+
+}
+
+.ranking .img {
+  display: flex;
+  margin: 20rpx 0 0 20rpx;
+  font-size: 25rpx;
+  align-items: center;
+}
+
+.weui-flex__item {
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+}
+
+.lists-content .image3 {
+  background-position: center center;
+}
+
+.tower-swiper .tower-item {
+  transform: scale(calc(0.5 + var(--index) / 10));
+  margin-left: calc(var(--left) * 100rpx - 150rpx);
+  z-index: var(--index);
+}
+
+.siz{
+  margin-top:20px;
+}
+.der{
+  float:left;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}

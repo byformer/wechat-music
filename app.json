@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Playing/Playing",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#181717",
+    "color": "#918f8f",
+    "selectedColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/images/index.png",
+        "iconPath": "/images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "发现音乐"
+      },
+      {
+        "selectedIconPath": "/images/music.png",
+        "iconPath": "/images/music.png",
+        "pagePath": "pages/logs/logs",
+        "text": "我的音乐"
+      },
+      {
+        "selectedIconPath": "/images/bofang.png",
+        "iconPath": "/images/bofang.png",
+        "pagePath": "pages/Playing/Playing",
+        "text": "正在播放"
+      },
+      {
+        "selectedIconPath": "/images/my.png",
+        "iconPath": "/images/my.png",
+        "pagePath": "pages/my/my",
+        "text": "账号"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
