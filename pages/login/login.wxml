@@ -1,0 +1,25 @@
+
+    <view class="container">
+       
+        <view class="text-btn">
+            <view class="text-logo">
+                    <image src="{{logo}}" style="width:100px;height:100px;"></image>
+            </view>
+           <view class="input">
+               <view class="cu-form-group margin-top form-input">
+                   
+                   <input type="text" placeholder="邮箱" autofocus bindinput="bindemail">邮箱</input>
+               </view>
+               <view class="cu-form-group margin-top form-input">
+                   
+                    <input type="password" placeholder="密码" autofocus bindinput="bindPasswordInput"  maxlength="16">密码</input>
+                </view>
+                <view class="cu-form-group margin-top form-btn">
+                   <view class="text-btn">
+                       <button type="warn" class="btn " ontap="login">登录</button>
+                       <button type="default" class="btn ">注册</button>
+                    </view>
+                    </view>
+            </view>
+        </view>
+    </view>

@@ -1,15 +1,20 @@
 {
   "pages": [
+    "pages/Playing/Playing",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/Playing/Playing",
-    "pages/my/my"
+   
+    "pages/my/my",
+    "pages/login/login"
+   
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#d43b32",
     "navigationBarTitleText": "首页",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
+    
   },
   "tabBar": {
     "backgroundColor": "#181717",

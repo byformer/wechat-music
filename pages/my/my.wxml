@@ -1,0 +1,74 @@
+<view>
+    <view class="font-text">
+        <p class="text_p">登陆网易云音乐</p>
+        <text class="text_p2">手机电脑多端同步、尽享海量高品质音乐</text>
+        <button class="btn day-weather" form-type="submit"  bindtap='onTapDayWeather'>{{btn}}</button>
+    </view>
+    <view class="bg">
+        <image class="" src="../../images/vip.png">
+
+        </image>
+    </view>
+    <!--  -->
+
+    <view class="weui-flex jusp">
+        <navigator url="" class="weui-flex_item" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/mail.png" />
+            <view class="weui-grid__label">我的消息</view>
+        </navigator>
+        <navigator url="" class="weui-flex_item" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/Friends.png" />
+            <view class="weui-grid__label">我的好友</view>
+        </navigator>
+        <navigator url="" class="weui-flex_item" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/skin.png" />
+            <view class="weui-grid__label">个性换肤</view>
+        </navigator>
+        <navigator url="" class="weui-fle_item" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../../images/Microphone.png" />
+            <view class="weui-grid__label">听歌识曲</view>
+        </navigator>
+    </view>
+
+    <view class="cu-list">
+        <navigator class="cu-item arrow">
+            <view class="content contents" bindtap="CopuLink">
+             <image class="weui-find" src="../../images/find3.png" ></image>
+                <text class="text-grey"> 演出</text>
+            </view>
+                <text >></text>
+           
+        </navigator>
+        <navigator class="cu-item arrow">
+            <view class="content contents" bindtap="CopuLink">
+                <image class="weui-find" src="../../images/shopping.png"></image>
+                <text class="text-grey">商城</text>
+            </view>
+            <text >></text>
+        </navigator>
+        <navigator class="cu-item arrow">
+            <view class="content contents" bindtap="CopuLink">
+           <image class="weui-find" src='../../images/find4.png'></image>
+                <text class="text-grey">附近的人</text>
+
+            </view>
+            <text >></text>
+        </navigator>
+        <navigator class="cu-item arrow">
+            <view class="content contents" bindtap="CopuLink">
+                <image class="weui-find" src="../../images/find2.png"></image>
+                <text class="text-grey"> 口袋铃声</text>
+
+            </view>
+            <text >></text>
+        </navigator>
+        <navigator class="cu-item arrow">
+            <view class="content contents" bindtap="CopuLink">
+                <image class="weui-find" src="../../images/find.png"></image>
+                <text class="text-grey">我对订单</text>
+
+            </view>
+            <text >></text>
+        </navigator>
+    </view>
+</view>
