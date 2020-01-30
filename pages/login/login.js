@@ -12,7 +12,8 @@ Page({
    });
   //  请求开始
  wx.request({
-   url: ''
+   url: 'http://musicapi.leanapp.cn/login?email=xxx@163.com&password=yyy',
+  
  })
  }
 })

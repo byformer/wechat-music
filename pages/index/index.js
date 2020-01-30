@@ -2,7 +2,7 @@
 //获取应用实例
 // 个人网易云音乐 ID  66919655
 
-const theAPI = `https://xgformer.com`
+// const theAPI = `https://xgformer.com`
 
 var app = getApp()
 Page({
@@ -25,15 +25,15 @@ Page({
         swiperList: [{
             id: 0,
             type: 'image',
-            url: 'https://xgformer.com/wp-content/uploads/2019/07/banner3.jpg '
+            url: 'https://s2.ax1x.com/2020/01/16/lvsYGD.jpg '
         }, {
             id: 1,
             type: 'image',
-            url: 'https://xgformer.com/wp-content/uploads/2019/07/banner2-1.jpg',
+            url: 'https://s2.ax1x.com/2020/01/16/lvsdsA.jpg',
         }, {
             id: 2,
             type: 'image',
-            url: 'https://xgformer.com/wp-content/uploads/2019/07/banner1.jpg'
+            url: 'https://s2.ax1x.com/2020/01/16/lvs6JS.jpg'
 
         }],
      

@@ -41,4 +41,27 @@
 
         </view>
     </view>
+    <!-- 歌单 -->
+  <scroll-view scroll-y="true" class="container">
+	<block wx:for="{{recommends}}" wx:for-item="song">
+		<view class="block" bindtap="playTap" data-id="{{song.id}}">
+			<view class="left">
+				<image src="{{song.album.picUrl}}" mode="aspectFill"/>
+			</view>
+			<view class="right">
+				<view class="content">
+					<view>
+						<text class="song-name">{{song.name}}</text>	
+					</view>
+					<view>
+						<text class="song-artists">{{song.artists}} - {{song.album.name}}</text>
+					</view>
+				</view>
+				<view class="play">
+					<image src="../../images/more.png" mode="scaleToFill"/>
+				</view>
+			</view>
+		</view>	
+	</block>
+</scroll-view>
 </view>

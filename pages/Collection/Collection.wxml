@@ -1,0 +1,59 @@
+<view class="container">
+    <view class="weui-search-bar">
+
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <!--搜索icon + input + 叉叉icon -->
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}"
+                    focus="{{inputShowed}}" bindinput="inputTyping" />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+            <!--focus时 搜索icon-->
+            <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">搜索</view>
+            </label>
+        </view>
+        <!--取消按钮-->
+        <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="searchbar-result" style="overflow-y: scroll;">
+        <view class="weui-cells" wx:if="{{inputVal.length > 0}}" style="overflow-y: scroll;">
+            <block wx:for="{{searchReault}}" wx:key="item" style="overflow-y: scroll;">
+                <navigator url="../now/index" class="weui-cell" hover-class="weui-cell_active" data-id="{{item.id}}"
+                    data-name="{{item.name}}" data-songUrl="{{item.mp3Url}}" data-picUrl="{{item.picUrl}}"
+                    data-singer="{{item.singer}}" open-type="switchTab" bindtap="tonow">
+                    <view class="weui-cell__bd">
+                        <view class="song-name">{{item.name}}
+                            <text class="song-singer">{{item.singer}}</text>
+                        </view>
+                    </view>
+                </navigator>
+
+
+
+            </block>
+
+        </view>
+    </view>
+
+	<block wx:for="{{favlist}}">
+		<view class="block" bindtap="playTap" data-name="{{item.name}}">
+			<image class="left" wx:if="{{item.picurl}}" src="{{item.picurl}}" mode="aspectFit"/>
+			<view wx:else class="default">
+				<image src="../../images/default.png" mode="aspectFit"/>	
+			</view>
+			<view class="right">
+				<view>
+					<text class="fav-name">{{item.name}}</text>	
+				</view>
+				<view>
+					<text class="fav-count">共{{item.count}}首</text>
+				</view>
+			</view>
+		</view>	
+	</block>
+</view>

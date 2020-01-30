@@ -4,7 +4,42 @@
 @import "colorui/weui.wxss";
 
 /**app.wxss**/
+view,
+sroll-view,
+swiper,
+icon,
+text,
+progress,
+button,
+checkbox,
+form,
+input,
+label,
+input,
+picker,
+radio,
+slider,
+switch,
+action-sheet,
+modal,
+toast,
+loading,
+navigator,
+audio,
+image,
+video,
+map,
+canvas {
+	box-sizing: border-box;
+}
 
+.hide {
+	display: none!important;
+}
+
+page {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
 .container {
   height: 100%;
  width: 100%;

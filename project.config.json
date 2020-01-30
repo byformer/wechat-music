@@ -13,7 +13,7 @@
 		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.2",
+	"libVersion": "2.8.0",
 	"appid": "wx4019f60b66153b88",
 	"projectname": "wechat-music",
 	"debugOptions": {

@@ -1,10 +1,5 @@
-//index.js
-//获取应用实例
-// 个人网易云音乐 ID  66919655
+var fav = require('../../utils/fav.js');
 
-const theAPI = `https://xgformer.com`
-
-var app = getApp()
 Page({
     data: {
         inputShowed: false,
@@ -27,7 +22,6 @@ Page({
      
   
         radio: []
-
     },
     showInput: function () {
         this.setData({
@@ -128,5 +122,13 @@ Page({
             url: '../now/index'
         }) */
     },
+    onLoad: function() {},
+    onShow: function() {
+        this.setData({
+            favlist: fav.getFavList()
+        })
+    },
+    playTap: function(e) {
 
-});
+    }
+})

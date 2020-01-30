@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/Playing/Playing",
     "pages/index/index",
-    "pages/logs/logs",
-   
     "pages/my/my",
+    "pages/Collection/Collection",
+     "pages/recommend/index",
+    "pages/play/index",
+    
     "pages/login/login"
+    
    
     
   ],
@@ -31,14 +33,14 @@
       {
         "selectedIconPath": "/images/music.png",
         "iconPath": "/images/music.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/recommend/index",
         "text": "我的音乐"
       },
       {
         "selectedIconPath": "/images/bofang.png",
         "iconPath": "/images/bofang.png",
-        "pagePath": "pages/Playing/Playing",
-        "text": "正在播放"
+        "pagePath": "pages/Collection/Collection",
+        "text": "我的收藏"
       },
       {
         "selectedIconPath": "/images/my.png",
